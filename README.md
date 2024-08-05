@@ -11,7 +11,8 @@
 1. リポジトリをfork
 2. `git clone`して`cd rspec_app_exam`で移動
 3. 修正用ブランチを`git checkout -b fix_testcode`で作成
-4. specファイルを修正して、テスト実行
+4. docker compose build, docker compose upコマンドを実行
+5. specファイルを修正して、テスト実行（docker compose upコマンドを実行しているターミナルとは別ターミナルを開いて docker compose exec web bundle exec rspecコマンドを実行）
 
 ## 備考
 ・失敗するテストケースは実行時にPendingになるよう`xit`にしています。`xit`を`it`に変更してテストコードを修正してください。
@@ -42,3 +43,5 @@ https://www.tam-tam.co.jp/tipsnote/program/post16686.html
 - pushする前に、作業ブランチをcheckoutしているかを確認しましょう。
 - PRを作成する際は、forkしたリポジトリに対してPRを作成できているかを確認しましょう。
 - 課題に記載されている注意事項は、漏れなく確認しましょう。
+
+※このアプリはDockerを使用しているため、コマンドはDockerを使用したもので進めてください。
